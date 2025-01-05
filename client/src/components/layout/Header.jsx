@@ -17,6 +17,7 @@ const Header = () => {
   const[isSearch , setIsSearch] = useState(false);
   const[isNewGroup , setIsNewGroup] = useState(false);
   const[isNotification   , setIsNotification] = useState(false);
+      // readable , writable
 
 
   const handleMobile = () => {

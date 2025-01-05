@@ -1,5 +1,5 @@
-import React from 'react'
-import { Grid2 as Grid,Skeleton} from '@mui/material' 
+import React ,{Suspense,lazy} from 'react';
+import { Grid2 as Grid,Skeleton,Stack} from '@mui/material' 
 
 export const LayoutLoader = () => {
     return (
@@ -14,7 +14,7 @@ export const LayoutLoader = () => {
             <Skeleton variant = "rectangular" height = {"100vh"} />
         </Grid>
         <Grid item xs={12} sm={8} md={5} lg={6} height={" 100% "} width={"40%"} >
-          <Stack spacing = {"0rem"}>
+          <Stack spacing = {"1rem"}>
              {
                 Array.from({ length: 10 }).map((_, index) => (
                     <Skeleton key = {index}  height = {"5rem"} />

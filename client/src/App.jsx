@@ -16,11 +16,15 @@ const App = () => {
   return <BrowserRouter>
    <Suspense fallback={<LayoutLoader />}>
     <Routes>
-      <Route path="/" element={<ProtectRoute user={user} reader="/login"><Home /></ProtectRoute>} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/chat" element={<ProtectRoute user={user} reader="/login"><Chat /></ProtectRoute>} />
-      <Route path="/groups" element={<ProtectRoute user={user} reader="/login"><Groups /></ProtectRoute>} />
+      <Route element={<ProtectRoute user={user} />} >
+
+      <Route path="/" element={<Home />} />
+      <Route path="/chat/:chatId" element={<Chat />} />
+      <Route path="/groups" element={<Groups />} />
       <Route path="*" element={<NotFound />} />
+
+      </Route>
+      <Route path="/login" element={<ProtectRoute user={!user} redirect="/"><Login /></ProtectRoute>} />
     </Routes>
    </Suspense>
   </BrowserRouter>
