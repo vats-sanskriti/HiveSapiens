@@ -1,8 +1,10 @@
+ ![879891d3891944cba4fca45951ae09d5-free](https://github.com/user-attachments/assets/1ca88921-fe5f-4fc3-ab13-0bc4d5b2b2ec)
 
+ 
 FEATURES 
 
 Core Features 
- One-on-one messaging ![879891d3891944cba4fca45951ae09d5-free](https://github.com/user-attachments/assets/1ca88921-fe5f-4fc3-ab13-0bc4d5b2b2ec)
+ One-on-one messaging
 
  Group chats 
  Multimedia sharing (images, videos, documents) 
