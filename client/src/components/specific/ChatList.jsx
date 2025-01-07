@@ -8,7 +8,7 @@ const ChatList= ({
   newMessagesAlert = [
       {
            chatId: "",
-          count: 0,
+           count: 0,
       },
 ],handleDeleteChat,
 }) => {
