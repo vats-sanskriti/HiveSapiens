@@ -57,7 +57,7 @@ const Header = () => {
                 display: { xs: "none", sm: "block" },
               }}     
               >  
-                Chattu
+                HiveSapiens
 
             </Typography>
         

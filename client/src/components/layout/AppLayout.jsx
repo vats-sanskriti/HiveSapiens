@@ -42,22 +42,9 @@ const AppLayout = () => (WrappedComponent) => {
                         Third
 
                     </Grid>
-
-
-
-
                 </Grid>
 
-
-
-
-
             </>
-
-
-
-
-
         );
     };
 };
