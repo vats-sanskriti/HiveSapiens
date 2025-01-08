@@ -3,6 +3,7 @@ import Header from './Header'
 import Title from '../shared/Title';
 import { Grid2 as Grid } from '@mui/material';
 import ChatList from '../specific/ChatList';
+import Profile from '../specific/Profile';
 
 
 
@@ -39,7 +40,7 @@ const AppLayout = () => (WrappedComponent) => {
                             bgcolor: "rgba(0,0,0,0.85)"
                         }}
                     >
-                        Third
+                        <Profile/>
 
                     </Grid>
                 </Grid>
