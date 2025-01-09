@@ -21,12 +21,16 @@ const Login = () => {
     const bio = useInputValidation("");
     const username = useInputValidation("", usernameValidator);
     const password = useInputValidation("");
-
-
     const avatar = useFileHandler("single");
+
+    const [loginError , setLoginError] = useState("");
 
     const handleLogin = (e) => {
         e.preventDefault();
+        if (!username.value || !password.value) {
+            setLoginError("Please fill in all fields.");
+            return;
+        }
     };
 
     const handleSignUp = (e) => {
@@ -37,7 +41,7 @@ const Login = () => {
         <div
             style={{
                 backgroundImage:
-                "linear-gradient(rgba(277,200,145,1),rgba(249,115,193,1))",
+                "linear-gradient(rgb(241, 109, 162),rgba(249,115,193,1))",
             }}
 
         >
@@ -82,7 +86,7 @@ const Login = () => {
                                     type="password"
                                     margin='normal'
                                     variant='outlined'
-                                    vallue={password.value}
+                                    value={password.value}
                                     onChange={password.changeHandler}
                                 />
 
@@ -93,9 +97,18 @@ const Login = () => {
                                     type='submit'
                                     fullWidth
                                 >
-                                    Login
+                                Login
 
                                 </Button>
+
+                                {loginError && (
+                                   <Typography 
+                                   color="error"       
+                                   variant="caption"
+                                    textAlign="center">
+                                            {loginError}
+                                        </Typography>
+                                    )}
 
                                 <Typography textAlign={"center"} m={"1rem"}>
                                     Or
@@ -109,7 +122,7 @@ const Login = () => {
 
                                     onClick={toggleLogin}
                                 >
-                                    Sign Up Instead
+                                    Go to Sign Up
 
                                 </Button>
 
@@ -275,7 +288,7 @@ const Login = () => {
 
                                     onClick={toggleLogin}
                                 >
-                                    Login Instead
+                                    Go to Login 
 
                                 </Button>
 
