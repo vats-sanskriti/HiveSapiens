@@ -33,7 +33,7 @@ export const sampleChats = [
   
     {
     avatar:["https://www.w3schools.com/howto/img_avatar.png"],
-        name: "Aaru",
+        name: "Narender Modi",
         _id: "5",
         groupChat: false,
         members:["1","2"],
@@ -41,21 +41,21 @@ export const sampleChats = [
   
     {
     avatar:["https://www.w3schools.com/howto/img_avatar.png"],
-        name: " Sonali",
+        name: "Lala The Chai Wala",
         _id: "6",
         groupChat: false,
         members:["1","2"],
         } ,
     {
     avatar:["https://www.w3schools.com/howto/img_avatar.png"],
-        name: "Kirti  ",
+        name: "Lalu Yadav",
         _id: "7",
         groupChat: false,
         members:["1","2"],
         } ,
     {
     avatar:["https://www.w3schools.com/howto/img_avatar.png"],
-        name: "Chanchal  ",
+        name: "Prashant Kishore",
         _id: "8",
         groupChat: false,
         members:["1","2"],
@@ -63,7 +63,7 @@ export const sampleChats = [
   
     {
     avatar:["https://www.w3schools.com/howto/img_avatar.png"],
-        name: "Deepak  ",
+        name: "Amit Shah",
         _id: "9",
         groupChat: false,
         members:["1","2"],
