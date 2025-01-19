@@ -12,10 +12,10 @@ const NewGroup = () => {
   const [selectedMembers,setSelectedMembers]=useState([]);
   
   const selectMemberHandler = (id) => {
+   
     setSelectedMembers((prev)=>
       prev.includes(id)?prev.filter((currElement)=>currElement!=id):[...prev,id]);
   };
-  console.log(selectedMembers)
   const submitHandler =()=>{};
   const closeHandler =()=>{};
   return (
@@ -33,7 +33,8 @@ const NewGroup = () => {
                     <UserItem 
                      user={i}
                      key={i._id} 
-                     handler={selectMemberHandler} isAdded={selectedMembers.includes(i._id)}
+                     handler={selectMemberHandler}
+                      isAdded={selectedMembers.includes(i._id)}
                      
                      />
       
