@@ -21,8 +21,8 @@ const Profile = ({ user }) => {
       />
       <ProfileCard heading={"Bio"} text={" I am Kamini "} />
       <ProfileCard
-        heading={"Username"}
-        text={" Kimmi"}
+        heading={"Usrname"}
+        text={" xyz@gmail.com"}
         Icon={<UserNameIcon />}
       />
       <ProfileCard heading={"Name"} text={"kamini"} Icon={<FaceIcon />} />
