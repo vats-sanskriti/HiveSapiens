@@ -1,34 +1,34 @@
-import { Avatar, AvatarGroup, Stack, Box } from '@mui/material';
-import React from 'react';
+import { Avatar, AvatarGroup, Box, Stack } from "@mui/material";
+import React from "react";
+import { transformImage } from "../../lib/features";
 
+// Todo Transform
 const AvatarCard = ({ avatar = [], max = 4 }) => {
-  // Ensure avatar is an array
-  const avatarArray = Array.isArray(avatar) ? avatar : [];
-
   return (
     <Stack direction={"row"} spacing={0.5}>
-      <AvatarGroup max={max}>
-        <Box width={"5rem"} height={"3rem"} sx={{ position: 'relative' }}>
-          {avatarArray.length > 0 ? (
-            avatarArray.map((i, index) => (
-              <Avatar
-                key={index} // Use index for keys
-                src={i}
-                alt={`Avatar ${index}`}
-                sx={{
-                  width: "3rem",
-                  height: "3rem",
-                  position: "absolute",
-                  left: {
-                    xs: `${0.5 + index}rem`,
-                    sm: `${index}rem`,
-                  },
-                }}
-              />
-            ))
-          ) : (
-            <Box>No Avatars Available</Box> // Fallback for empty array
-          )}
+      <AvatarGroup
+        max={max}
+        sx={{
+          position: "relative",
+        }}
+      >
+        <Box width={"5rem"} height={"3rem"}>
+          {avatar.map((i, index) => (
+            <Avatar
+              key={Math.random() * 100}
+              src={transformImage(i)}
+              alt={`Avatar ${index}`}
+              sx={{
+                width: "3rem",
+                height: "3rem",
+                position: "absolute",
+                left: {
+                  xs: `${0.5 + index}rem`,
+                  sm: `${index}rem`,
+                },
+              }}
+            />
+          ))}
         </Box>
       </AvatarGroup>
     </Stack>
