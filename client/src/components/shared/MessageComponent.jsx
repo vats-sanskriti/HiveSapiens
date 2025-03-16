@@ -1,3 +1,4 @@
+
 import { Box, Typography } from "@mui/material";
 import React, { memo } from "react";
 import { lightBlue } from "../../constants/color";
@@ -63,3 +64,4 @@ const MessageComponent = ({ message, user }) => {
 };
 
 export default memo(MessageComponent);
+

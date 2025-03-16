@@ -20,6 +20,7 @@ import { useAsyncMutation, useErrors } from "../../hooks/hook";
 import { setIsNewGroup } from "../../redux/reducers/misc";
 import toast from "react-hot-toast";
 
+
 const NewGroup = () => {
   const { isNewGroup } = useSelector((state) => state.misc);
   const dispatch = useDispatch();
@@ -78,6 +79,7 @@ const NewGroup = () => {
           value={groupName.value}
           onChange={groupName.changeHandler}
         />
+
 
         <Typography variant="body1">Members</Typography>
 

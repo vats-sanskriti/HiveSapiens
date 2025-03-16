@@ -1,3 +1,4 @@
+
 import { Skeleton, keyframes, styled } from "@mui/material";
 import { Link as LinkComponent } from "react-router-dom";
 import { grayColor, matBlack } from "../../constants/color";
@@ -75,3 +76,5 @@ export {
   VisuallyHiddenInput,
   BouncingSkeleton,
 };
+
+

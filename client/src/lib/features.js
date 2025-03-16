@@ -1,3 +1,4 @@
+
 import moment from "moment";
 
 const fileFormat = (url = "") => {
@@ -51,3 +52,4 @@ const getOrSaveFromStorage = ({ key, value, get }) => {
 };
 
 export { fileFormat, transformImage, getLast7Days, getOrSaveFromStorage };
+

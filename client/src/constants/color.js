@@ -1,3 +1,4 @@
+
 console.log("color.js loaded");
 
 export const orange = "#ea7070";
